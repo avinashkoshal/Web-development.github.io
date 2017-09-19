@@ -1,0 +1,88 @@
+
+<html>
+<head>	
+<link title="timeline-styles" rel="stylesheet" href="css/timeline.css">
+
+<link title="timeline-styles" rel="stylesheet" href="css/time.css">
+<script src="js/timeline.js"></script>
+<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+<script type="text/javascript" src="json/data.json"></script>
+
+ <script type="text/javascript">
+            var additionalOptions = {
+              start_at_end: true,
+              default_bg_color: {r:0, g:0, b:0},
+              timenav_height: 250
+            }
+var sampleJson= {
+	  "title": {
+        "media": {
+          "url": "c.jpg",
+          "caption": "",
+          "credit": ""
+        },
+        "text": {
+          "headline": "Journey to Achieve my Dreams</p>",
+          "text": "<p><strong><bold>Journey To Achieve my Dreams</bold></strong></p>",
+        }
+    },
+  
+    "events": [
+      {
+        "media": {
+          "url": "a.jpg",
+          "caption": "I took Admission in MIET Jammu.",
+          "credit": ""
+        },
+        "start_date": {
+          "month": "8",
+          "day": "23",
+          "year": "2016"
+        },
+        "text": {
+          "headline": "I took admission in MIET Jammu",
+          "text": "<p>This is the first step towards my future. I took admission in MIET Jammu  in CSE Stream.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "b.jpg",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+           "month": "5",
+          "day": "17",
+          "year": "2017"
+         
+        },
+        "text": {
+          "headline": "Meeting with Rishi and Purnrndu sir",
+          "text": "This is the turning step in my life when i met with Purnrndu and Rishi sir. On that day actually i have learned the actual meaning of the Engg."
+        }
+
+      },
+        {
+        "media": {
+          "url": "d.jpg",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+           "month": "5",
+          "day": "18",
+          "year": "2017"
+         
+        },
+        "text": {
+          "headline": "Self Development Begins",
+          "text":" Self Development "
+        }
+       
+      },
+    ]
+}
+            timeline = new TL.Timeline('timeline-embed',sampleJson,additionalOptions);
+          </script>
+      </head>
+      </html>
